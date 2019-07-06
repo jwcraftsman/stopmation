@@ -53,8 +53,8 @@ def save_video(name, frames, fps):
         return
     w = frames[0].shape[1]
     h = frames[0].shape[0]
-    #fmt = 'XVID'
-    fmt = 'MJPG'
+    fmt = 'XVID'
+    #fmt = 'MJPG'
     #fmt = 'WMV1'
     fourcc = cv2.VideoWriter_fourcc(*fmt)
     fname = '{}.avi'.format(os.path.splitext(name)[0])
